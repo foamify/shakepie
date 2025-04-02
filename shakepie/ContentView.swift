@@ -5,20 +5,17 @@
 //  Created by Ahmad Arif Aulia Sutarman on 25/03/25.
 //
 
+import RiveRuntime
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+//            RiveViewModel(fileName: "voicu_ribbon").view()
+            RiveViewModel(fileName: "window", fit: .layout, alignment: .center).view()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .padding()
+        .background(Color.clear)
+        .ignoresSafeArea()
     }
-}
-
-#Preview {
-    ContentView()
 }

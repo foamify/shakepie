@@ -6,8 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DB74DDFE2D9D5E7400D02293 /* window.riv in Resources */ = {isa = PBXBuildFile; fileRef = DB74DDFD2D9D5E7400D02293 /* window.riv */; };
+		DB865CBF2D92AA0F0028C093 /* voicu_ribbon.riv in Resources */ = {isa = PBXBuildFile; fileRef = DB865CBD2D92AA0F0028C093 /* voicu_ribbon.riv */; };
+		DB865CC22D92AC0D0028C093 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = DB865CC12D92AC0D0028C093 /* RiveRuntime */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		DB74DDFD2D9D5E7400D02293 /* window.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = window.riv; sourceTree = "<group>"; };
 		DB865CA92D92A86D0028C093 /* shakepie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shakepie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB865CBD2D92AA0F0028C093 /* voicu_ribbon.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = voicu_ribbon.riv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB865CC22D92AC0D0028C093 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +41,7 @@
 		DB865CA02D92A86D0028C093 = {
 			isa = PBXGroup;
 			children = (
+				DB865CBE2D92AA0F0028C093 /* Assets */,
 				DB865CAB2D92A86D0028C093 /* shakepie */,
 				DB865CAA2D92A86D0028C093 /* Products */,
 			);
@@ -43,6 +53,15 @@
 				DB865CA92D92A86D0028C093 /* shakepie.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DB865CBE2D92AA0F0028C093 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DB74DDFD2D9D5E7400D02293 /* window.riv */,
+				DB865CBD2D92AA0F0028C093 /* voicu_ribbon.riv */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +84,7 @@
 			);
 			name = shakepie;
 			packageProductDependencies = (
+				DB865CC12D92AC0D0028C093 /* RiveRuntime */,
 			);
 			productName = shakepie;
 			productReference = DB865CA92D92A86D0028C093 /* shakepie.app */;
@@ -94,6 +114,9 @@
 			);
 			mainGroup = DB865CA02D92A86D0028C093;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DB865CC02D92AC0D0028C093 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DB865CAA2D92A86D0028C093 /* Products */;
 			projectDirPath = "";
@@ -109,6 +132,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB74DDFE2D9D5E7400D02293 /* window.riv in Resources */,
+				DB865CBF2D92AA0F0028C093 /* voicu_ribbon.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB865CC02D92AC0D0028C093 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB865CC12D92AC0D0028C093 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB865CC02D92AC0D0028C093 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB865CA12D92A86D0028C093 /* Project object */;
 }
