@@ -1,6 +1,6 @@
 //
-//  shakepieApp.swift
-//  shakepie
+//  keystroApp.swift
+//  keystro
 //
 //  Created by Ahmad Arif Aulia Sutarman on 25/03/25.
 //
@@ -9,14 +9,14 @@ import SwiftUI
 import RiveRuntime
 
 @main
-struct shakepieApp: App {
+struct keystroApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .background(Color.clear)
-//                .frame(width: 400, height: 300)
+                .background(Color.black.opacity(0.01))
+                .frame(width: 1400/2, height: 1340/2)
         }
     }
 }

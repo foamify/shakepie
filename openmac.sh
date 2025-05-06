@@ -1,1 +1,1 @@
-open shakepie.xcodeproj
+open keystro.xcodeproj
